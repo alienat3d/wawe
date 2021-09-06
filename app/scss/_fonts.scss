@@ -1,55 +1,70 @@
+// === RALEWAY ===
 @font-face {
-  font-family: "RobotoCondensed-Light";
-  font-weight: 300;
-  font-style: normal;
-  src: local("RobotoCondensed-Light"),
-    url(../fonts/RobotoCondensed-Light.woff2) format("woff2"),
-    url(../fonts/RobotoCondensed-Light.woff) format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "RobotoCondensed-LightItalic";
-  font-weight: 300;
-  font-style: italic;
-  src: local("RobotoCondensed-LightItalic"),
-    url(../fonts/RobotoCondensed-LightItalic.woff2) format("woff2"),
-    url(../fonts/RobotoCondensed-LightItalic.woff) format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "RobotoCondensed-Regular";
-  font-weight: 400;
-  font-style: normal;
-  src: local("RobotoCondensed-Regular"),
-    url(../fonts/RobotoCondensed-Regular.woff2) format("woff2"),
-    url(../fonts/RobotoCondensed-Regular.woff) format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "RobotoCondensed-Italic";
-  font-weight: 400;
-  font-style: italic;
-  src: local("RobotoCondensed-Italic"),
-    url(../fonts/RobotoCondensed-Italic.woff2) format("woff2"),
-    url(../fonts/RobotoCondensed-Italic.woff) format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "RobotoCondensed-Bold";
+  font-family: "Raleway-Bold";
   font-weight: 700;
   font-style: normal;
-  src: local("RobotoCondensed-Bold"),
-    url(../fonts/RobotoCondensed-Bold.woff2) format("woff2"),
-    url(../fonts/RobotoCondensed-Bold.woff) format("woff");
+  src: local("Raleway-Bold"),
+    url('../fonts/Raleway-Bold.woff2') format("woff2"),
+    url('../fonts/Raleway-Bold.woff') format("woff");
   font-display: swap;
 }
-// ===
+
 @font-face {
   font-family: "Raleway-SemiBold";
   font-weight: 600;
   font-style: normal;
   src: local("Raleway-SemiBold"),
-    url(../fonts/Raleway-SemiBold.woff2) format("woff2"),
-    url(../fonts/Raleway-SemiBold.woff) format("woff");
+    url('../fonts/Raleway-SemiBold.woff2') format("woff2"),
+    url('../fonts/Raleway-SemiBold.woff') format("woff");
+  font-display: swap;
+}
+// === ROBOTO CONDENSED ===
+@font-face {
+  font-family: "RobotoCondensed-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("RobotoCondensed-Bold"),
+    url('../fonts/RobotoCondensed-Bold.woff2') format("woff2"),
+    url('../fonts/RobotoCondensed-Bold.woff') format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("RobotoCondensed-Regular"),
+    url('../fonts/RobotoCondensed-Regular.woff2') format("woff2"),
+    url('../fonts/RobotoCondensed-Regular.woff') format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Italic";
+  font-weight: 400;
+  font-style: italic;
+  src: local("RobotoCondensed-Italic"),
+    url('../fonts/RobotoCondensed-Italic.woff2') format("woff2"),
+    url('../fonts/RobotoCondensed-Italic.woff') format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Light";
+  font-weight: 300;
+  font-style: normal;
+  src: local("RobotoCondensed-Light"),
+    url('../fonts/RobotoCondensed-Light.woff2') format("woff2"),
+    url('../fonts/RobotoCondensed-Light.woff') format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-LightItalic";
+  font-weight: 300;
+  font-style: italic;
+  src: local("RobotoCondensed-LightItalic"),
+    url('../fonts/RobotoCondensed-LightItalic.woff2') format("woff2"),
+    url('../fonts/RobotoCondensed-LightItalic.woff') format("woff");
   font-display: swap;
 }

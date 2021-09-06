@@ -1,10 +1,115 @@
 @import "vars";
-@import "libs";
 @import "fonts";
+@import "libs";
+@import "reset";
 @import "global";
+// ===
+// === HEADER ===
+.header {
+  &__inner {
+    padding: 35px 0;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  &__logo {
+    margin-right: 184px;
+  }
+  
+  &__image {
+    display: block;
+  }
+}
 
+.menu {
+  &__list {
+    display: flex;
+  }
 
+  &__item {
+    margin-top: 4px;
+    padding: 0 1px 4px;
+    border-bottom: 1px solid transparent;
+    transition: $transition-fast;
 
+    &+&{
+      margin-left: 43px;
+    }
 
-@import "media";
+    &:hover {
+      border-bottom-color: $accent;
+    }
+  }
+
+  &__link {
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFF;
+  }
+}
+// === / HEADER ===
+
+// === HERO ===
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 45vh;
+    width: 100%;
+    background: linear-gradient(180deg, #01353E 0%, rgba(51, 51, 51, 0.595076) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+  }
+
+  &__title {
+    @extend %raleway-700;
+    font-size: 200px;
+    line-height: 235px;
+    color: #0d302c;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+  }
+
+  &__scroll {
+    position: absolute;
+    display: inline-block;
+    bottom: 10%;
+
+    animation: moving 6s linear infinite;
+  }
+
+@keyframes moving {
+  0% {
+    bottom: 10%;
+  }
+  50% {
+    bottom: 15%;
+  }
+  100% {
+    bottom: 10%;
+  }
+}
+
+  &__scroll-image {
+  }
+}
+// === / HERO ===

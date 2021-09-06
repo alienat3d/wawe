@@ -1,58 +1,28 @@
-*, *::before, *::after {box-sizing: inherit;}
+html, body {height: 100%;}
 
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-size: inherit;
-}
-
-body{
-  position: relative;
-  min-width: 320px;
-  overflow-x: hidden;
-  color: $color-white;
-}
-
-.page-section{
-  position: relative;
-  padding: 75px 0 50px;
-  min-height: 100vh;
-  background-image: url('../images/page-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+body {
+@extend %roboto-con-400;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0.6px;
+color: $default;
 }
 
 .container{
+  max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1270px;
 }
 
-.title{
+// .wrapper {
+// 	display: flex;
+// 	flex-direction: column;
+// 	min-height: 100%;
+// }
 
-}
-
-.scroll-down {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 13px 0 30px;
-  text-align: center;
-}
+// .main {
+// 	flex: 1 0 auto;
+// }
+// .footer {
+// 	flex: 0 0 auto;
+// }

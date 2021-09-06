@@ -1,0 +1,48 @@
+// === COLORS ===
+$default: #242121;
+$title: #01353E;
+$accent: #00B2A0;
+// === / COLORS ===
+
+// === TRANSITION ===
+$transition-fast: all .3s;
+// === / TRANSITION ===
+
+// === FONTS ===
+%raleway-700 {
+  font-family: "Raleway-Bold";
+  font-weight: 700;
+}
+
+%raleway-600 {
+  font-family: "Raleway-SemiBold";
+  font-weight: 600;
+}
+
+%roboto-con-700 {
+  font-family: "RobotoCondensed-Bold";
+  font-weight: 700;
+}
+
+%roboto-con-400 {
+  font-family: "RobotoCondensed-Regular";
+  font-weight: 400;
+}
+
+%roboto-con-400-ital {
+  font-family: "RobotoCondensed-Italic";
+  font-weight: 400;
+  font-style: italic;
+}
+
+%roboto-con-300 {
+  font-family: "RobotoCondensed-Light";
+  font-weight: 300;
+}
+
+%roboto-con-300-ital {
+  font-family: "RobotoCondensed-LightItalic";
+  font-weight: 300;
+  font-style: italic;
+}
+// === / FONTS ===
