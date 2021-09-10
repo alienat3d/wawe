@@ -1,17 +1,41 @@
-html, body {height: 100%;}
-
+html,
 body {
-@extend %roboto-con-400;
-font-size: 14px;
-line-height: 18px;
-letter-spacing: 0.6px;
-color: $default;
+  height: 100%;
 }
 
-.container{
+body {
+  @extend %roboto-con-400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  color: $default;
+}
+
+.container {
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.title {
+  position: relative;
+  margin: 0 auto;
+  display: table;
+  @extend %raleway-600;
+  font-size: 48px;
+  line-height: 56px;
+  color: $title;
+
+  &::after {
+    content: "/";
+    position: absolute;
+    top: 0;
+    right: -51px;
+    @extend %raleway-600;
+    font-size: 72px;
+    line-height: 86px;
+    color: #00b2a0;
+  }
 }
 
 // .wrapper {

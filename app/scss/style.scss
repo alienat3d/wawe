@@ -21,7 +21,7 @@
   &__logo {
     margin-right: 184px;
   }
-  
+
   &__image {
     display: block;
   }
@@ -38,7 +38,7 @@
     border-bottom: 1px solid transparent;
     transition: $transition-fast;
 
-    &+&{
+    & + & {
       margin-left: 43px;
     }
 
@@ -50,7 +50,7 @@
   &__link {
     font-size: 24px;
     line-height: 28px;
-    color: #FFF;
+    color: #fff;
   }
 }
 // === / HEADER ===
@@ -68,12 +68,18 @@
   background-position: center center;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     height: 45vh;
     width: 100%;
-    background: linear-gradient(180deg, #01353E 0%, rgba(51, 51, 51, 0.595076) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+    background: linear-gradient(
+      180deg,
+      #01353e 0%,
+      rgba(51, 51, 51, 0.595076) 31.64%,
+      rgba(51, 51, 51, 0.222586) 74.35%,
+      rgba(51, 51, 51, 0) 99.87%
+    );
   }
 
   &__title {
@@ -97,19 +103,48 @@
     animation: moving 6s linear infinite;
   }
 
-@keyframes moving {
-  0% {
-    bottom: 10%;
-  }
-  50% {
-    bottom: 15%;
-  }
-  100% {
-    bottom: 10%;
-  }
-}
-
-  &__scroll-image {
+  @keyframes moving {
+    0% {
+      bottom: 10%;
+    }
+    50% {
+      bottom: 15%;
+    }
+    100% {
+      bottom: 10%;
+    }
   }
 }
 // === / HERO ===
+
+// === ABOUT ===
+.about {
+  padding: 200px 0 170px;
+
+  &__title {
+    margin-bottom: 257px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    max-width: 490px;
+
+    & + & {
+      margin-right: 120px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    min-height: 92px;
+  }
+}
+// === / ABOUT ===
+
+// === ABOUT ===
+
+// === / ABOUT ===
