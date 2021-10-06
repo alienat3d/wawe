@@ -21,9 +21,11 @@ body {
   position: relative;
   margin: 0 auto;
   display: table;
+  
   @extend %raleway-600;
   font-size: 48px;
   line-height: 56px;
+  letter-spacing: 0.6px;
   color: $title;
 
   &::after {
@@ -31,6 +33,7 @@ body {
     position: absolute;
     top: 0;
     right: -51px;
+
     @extend %raleway-600;
     font-size: 72px;
     line-height: 86px;

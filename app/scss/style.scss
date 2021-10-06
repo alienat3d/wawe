@@ -145,6 +145,65 @@
 }
 // === / ABOUT ===
 
-// === ABOUT ===
+// === ABOUT-SCHOOL ===
+.about-school {
+  padding: 200px 0 200px;
+  background-color: $bg;
 
-// === / ABOUT ===
+  &__title {
+    margin-bottom: 100px;
+  }
+  &__info-wrapper {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info-item {
+    max-width: 350px;
+  }
+  &__item-box {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__info-image {}
+  &__info-title {
+    margin-left: 10px;
+    max-width: 146px;
+
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.6px;
+  }
+  &__info-text {}
+  &__stats-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__stats-infolines {
+    min-width: 350px;
+  }
+  &__infolines-item {}
+  &__infoline-box {
+    width: 100%;
+  }
+  &__infoline-image {
+    display: inline-block;
+  }
+  &__infoline-number {
+    margin-left: 10px;
+    font-size: 24px;
+    line-height: 1;
+  }
+  &__infoline-subtitle {}
+  &__stats-text {
+    max-width: 600px;
+  }
+  &__stats-paragraph {
+    &+&{
+      margin-top: 30px;
+    }
+  }
+}
+// === / ABOUT-SCHOOL ===
