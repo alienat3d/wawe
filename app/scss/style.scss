@@ -231,7 +231,7 @@
   &__stats-text {
     max-width: 600px;
   }
-  
+
   &__stats-paragraph {
     & + & {
       margin-top: 30px;
@@ -239,3 +239,29 @@
   }
 }
 // === / ABOUT-SCHOOL ===
+
+// === ABOUT-TEACHERS ===
+.about-teachers {
+  position: relative;
+  padding: 200px 0 146px;
+
+  &__info-title {
+    margin: 0 0 100px;
+  }
+
+  &__info-text {
+    max-width: 510px;
+    & + & {
+      margin-top: 30px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 960px;
+    background-color: $title;
+  }
+}
+// === / ABOUT-TEACHERS ===
