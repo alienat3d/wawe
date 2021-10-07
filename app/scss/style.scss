@@ -48,6 +48,7 @@
   }
 
   &__link {
+    @extend %roboto-con-400;
     font-size: 24px;
     line-height: 28px;
     color: #fff;
@@ -90,6 +91,7 @@
   }
 
   &__subtitle {
+    @extend %roboto-con-400;
     font-size: 24px;
     line-height: 28px;
     color: #000;
@@ -153,55 +155,85 @@
   &__title {
     margin-bottom: 100px;
   }
+
   &__info-wrapper {
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
   }
+
   &__info-item {
     max-width: 350px;
   }
+
   &__item-box {
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 56px;
   }
-  &__info-image {}
+
   &__info-title {
     margin-left: 10px;
     max-width: 146px;
 
+    @extend %roboto-con-400;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.6px;
   }
-  &__info-text {}
+
   &__stats-wrapper {
     display: flex;
     justify-content: space-between;
   }
+
   &__stats-infolines {
+    margin-top: 7px;
     min-width: 350px;
   }
-  &__infolines-item {}
+
+  &__infolines-item {
+    margin-bottom: 10px;
+  }
   &__infoline-box {
-    width: 100%;
+    display: flex;
   }
+
+  &__image-wrapper {
+    position: relative;
+    width: 295px;
+  }
+
   &__infoline-image {
-    display: inline-block;
+    margin-bottom: 1px;
+    max-width: 295px;
   }
+
   &__infoline-number {
-    margin-left: 10px;
+    position: absolute;
+    top: -8px;
+    right: -47px;
+
+    @extend %roboto-con-400;
     font-size: 24px;
     line-height: 1;
+
+    &--1 {
+      right: -5px;
+    }
+    &--2 {
+      right: -35px;
+    }
   }
-  &__infoline-subtitle {}
+
   &__stats-text {
     max-width: 600px;
   }
+  
   &__stats-paragraph {
-    &+&{
+    & + & {
       margin-top: 30px;
     }
   }
